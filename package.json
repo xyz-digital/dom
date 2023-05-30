@@ -1,6 +1,6 @@
 {
   "name": "@xyz-digital/dom",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "DOM helpers",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
