@@ -1,18 +1,12 @@
 import { Element, ElementAttributes } from './Element';
 
 interface InputAttributes extends ElementAttributes {
+  autocomplete?: 'on' | 'off';
   checked?: boolean;
   disabled?: boolean;
   placeholder?: string;
   required?: boolean;
-  type?:
-    | 'text'
-    | 'date'
-    | 'time'
-    | 'checkbox'
-    | 'datetime-local'
-    | 'password'
-    | 'radio';
+  type?: 'checkbox' | 'date' | 'datetime-local' | 'password' | 'radio' | 'search' | 'time' | 'text';
   value?: string;
   onkeyup?: (e: KeyboardEvent) => void;
 }
