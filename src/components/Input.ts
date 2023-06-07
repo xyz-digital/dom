@@ -6,7 +6,7 @@ interface InputAttributes extends ElementAttributes {
   disabled?: boolean;
   placeholder?: string;
   required?: boolean;
-  type?: 'checkbox' | 'date' | 'datetime-local' | 'password' | 'radio' | 'search' | 'time' | 'text';
+  type?: 'checkbox' | 'date' | 'datetime-local' | 'password' | 'radio' | 'search' | 'submit' | 'tel' | 'text' | 'time';
   value?: string;
   onkeyup?: (e: KeyboardEvent) => void;
 }
