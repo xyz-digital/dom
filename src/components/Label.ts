@@ -1,15 +1,12 @@
-import { Element, ElementAttributes } from './Element';
+import { Element, ElementAttributes, ElementProps } from './Element';
 
 interface LabelAttributes extends ElementAttributes {
   for?: string;
 }
 
-type LabelProps = {
+interface LabelProps extends ElementProps {
   attr?: LabelAttributes;
-  class?: string;
-  id?: string;
-  styles?: Partial<CSSStyleDeclaration>;
-};
+}
 
 export function Label(props?: LabelProps) {
   return Element({

@@ -1,4 +1,4 @@
-import { Element, ElementAttributes } from './Element';
+import { Element, ElementAttributes, ElementProps } from './Element';
 
 interface ButtonAttributes extends ElementAttributes {
   type?: 'button' | 'submit';
@@ -7,12 +7,9 @@ interface ButtonAttributes extends ElementAttributes {
   disabled?: boolean;
 }
 
-type ButtonProps = {
+interface ButtonProps extends ElementProps {
   attr?: ButtonAttributes;
-  class?: string;
-  id?: string;
-  styles?: Partial<CSSStyleDeclaration>;
-};
+}
 
 export function Button(props?: ButtonProps) {
   return Element({

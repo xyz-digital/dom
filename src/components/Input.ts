@@ -1,4 +1,4 @@
-import { Element, ElementAttributes } from './Element';
+import { Element, ElementAttributes, ElementProps } from './Element';
 
 interface InputAttributes extends ElementAttributes {
   autocomplete?: 'on' | 'off';
@@ -11,12 +11,9 @@ interface InputAttributes extends ElementAttributes {
   onkeyup?: (e: KeyboardEvent) => void;
 }
 
-type InputProps = {
+interface InputProps extends ElementProps {
   attr?: InputAttributes;
-  class?: string;
-  id?: string;
-  styles?: Partial<CSSStyleDeclaration>;
-};
+}
 
 export function Input(props?: InputProps) {
   return Element({

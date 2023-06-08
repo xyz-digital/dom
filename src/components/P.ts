@@ -1,13 +1,6 @@
-import { Element, ElementAttributes } from './Element';
+import { Element, ElementProps } from './Element';
 
-type PProps = {
-  attr?: ElementAttributes;
-  class?: string;
-  id?: string;
-  styles?: Partial<CSSStyleDeclaration>;
-};
-
-export function P(props?: PProps) {
+export function P(props?: ElementProps) {
   return Element({
     tag: 'p',
     ...props,

@@ -1,13 +1,6 @@
-import { Element, ElementAttributes } from './Element';
+import { Element, ElementProps } from './Element';
 
-type SpanProps = {
-  attr?: ElementAttributes;
-  class?: string;
-  id?: string;
-  styles?: Partial<CSSStyleDeclaration>;
-};
-
-export function Span(props?: SpanProps) {
+export function Span(props?: ElementProps) {
   return Element({
     tag: 'span',
     ...props,

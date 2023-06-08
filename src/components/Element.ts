@@ -1,6 +1,6 @@
 import { setStyle } from '../utils/DOMutils';
 
-export type ElementAttributes = {
+export interface ElementAttributes {
   className?: string;
   innerText?: string;
   innerHTML?: string;
@@ -10,18 +10,20 @@ export type ElementAttributes = {
   onclick?: (ev: Event) => void;
   onmouseover?: (ev: Event) => void;
   onmouseout?: (ev: Event) => void;
-};
+}
 
-type ElementProps = {
+interface Tag {
   tag: string;
+}
+export interface ElementProps {
   attr?: ElementAttributes;
-  id?: string;
   class?: string;
   classOnHover?: string;
+  id?: string;
   styles?: Partial<CSSStyleDeclaration>;
-};
+}
 
-export function Element(props: ElementProps) {
+export function Element(props: Tag & ElementProps) {
   const el = document.createElement(props.tag);
   const { id, attr, styles, classOnHover } = props;
 

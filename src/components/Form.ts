@@ -1,13 +1,6 @@
-import { Element, ElementAttributes } from './Element';
+import { Element, ElementProps } from './Element';
 
-type FormProps = {
-  attr?: ElementAttributes;
-  class?: string;
-  id?: string;
-  styles?: Partial<CSSStyleDeclaration>;
-};
-
-export function Form(props?: FormProps) {
+export function Form(props?: ElementProps) {
   return Element({
     tag: 'form',
     ...props,
