@@ -1,6 +1,8 @@
 import { Element, ElementProps } from './Element';
 
-export function Span(props?: ElementProps) {
+export interface SpanProps extends ElementProps {}
+
+export function Span(props?: SpanProps) {
   return Element({
     tag: 'span',
     ...props,

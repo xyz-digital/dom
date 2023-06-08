@@ -1,6 +1,6 @@
 import { Element, ElementAttributes, ElementProps } from './Element';
 
-interface InputAttributes extends ElementAttributes {
+export interface InputAttributes extends ElementAttributes {
   autocomplete?: 'on' | 'off';
   checked?: boolean;
   disabled?: boolean;
@@ -11,7 +11,7 @@ interface InputAttributes extends ElementAttributes {
   onkeyup?: (e: KeyboardEvent) => void;
 }
 
-interface InputProps extends ElementProps {
+export interface InputProps extends ElementProps {
   attr?: InputAttributes;
 }
 
