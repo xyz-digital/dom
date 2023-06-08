@@ -10,4 +10,3 @@ export { P } from './P';
 export { Span } from './Span';
 export { Table, Td, Th, Tr } from './Table';
 export { Textarea } from './Textarea';
-export { Ul } from './Ul';

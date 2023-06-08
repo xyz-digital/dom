@@ -1,13 +1,6 @@
-import { Element, ElementAttributes } from './Element';
+import { Element, ElementProps } from './Element';
 
-type DivProps = {
-  attr?: ElementAttributes;
-  class?: string;
-  id?: string;
-  styles?: Partial<CSSStyleDeclaration>;
-};
-
-export function Div(props?: DivProps) {
+export function Div(props?: ElementProps) {
   return Element({
     tag: 'div',
     ...props,

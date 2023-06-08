@@ -1,34 +1,27 @@
-import { Element, ElementAttributes } from './Element';
+import { Element, ElementProps } from './Element';
 
-type TableProps = {
-  attr?: ElementAttributes;
-  class?: string;
-  id?: string;
-  styles?: Partial<CSSStyleDeclaration>;
-};
-
-export function Table(props?: TableProps) {
+export function Table(props?: ElementProps) {
   return Element({
     tag: 'table',
     ...props,
   });
 }
 
-export function Tr(props?: TableProps) {
+export function Tr(props?: ElementProps) {
   return Element({
     tag: 'tr',
     ...props,
   });
 }
 
-export function Th(props?: TableProps) {
+export function Th(props?: ElementProps) {
   return Element({
     tag: 'th',
     ...props,
   });
 }
 
-export function Td(props?: TableProps) {
+export function Td(props?: ElementProps) {
   return Element({
     tag: 'td',
     ...props,

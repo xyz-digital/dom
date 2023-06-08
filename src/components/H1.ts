@@ -1,13 +1,6 @@
-import { Element, ElementAttributes } from './Element';
+import { Element, ElementProps } from './Element';
 
-type H1Props = {
-  attr?: ElementAttributes;
-  class?: string;
-  id?: string;
-  styles?: Partial<CSSStyleDeclaration>;
-};
-
-export function H1(props: H1Props) {
+export function H1(props: ElementProps) {
   return Element({
     tag: 'h1',
     ...props,
