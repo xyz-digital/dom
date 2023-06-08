@@ -12,15 +12,16 @@ export interface ElementAttributes {
   onmouseout?: (ev: Event) => void;
 }
 
-interface Tag {
-  tag: string;
-}
 export interface ElementProps {
   attr?: ElementAttributes;
   class?: string;
   classOnHover?: string;
   id?: string;
   styles?: Partial<CSSStyleDeclaration>;
+}
+
+interface Tag {
+  tag: string;
 }
 
 export function Element(props: Tag & ElementProps) {

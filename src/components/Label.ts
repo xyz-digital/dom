@@ -1,10 +1,10 @@
 import { Element, ElementAttributes, ElementProps } from './Element';
 
-interface LabelAttributes extends ElementAttributes {
+export interface LabelAttributes extends ElementAttributes {
   for?: string;
 }
 
-interface LabelProps extends ElementProps {
+export interface LabelProps extends ElementProps {
   attr?: LabelAttributes;
 }
 

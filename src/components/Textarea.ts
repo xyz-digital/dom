@@ -1,11 +1,11 @@
 import { Element, ElementAttributes, ElementProps } from './Element';
 
-interface TextareaAttributes extends ElementAttributes {
+export interface TextareaAttributes extends ElementAttributes {
   placeholder?: string;
   required?: boolean;
 }
 
-interface TextareaProps extends ElementProps {
+export interface TextareaProps extends ElementProps {
   attr?: TextareaAttributes;
 }
 

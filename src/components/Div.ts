@@ -1,6 +1,8 @@
 import { Element, ElementProps } from './Element';
 
-export function Div(props?: ElementProps) {
+export interface DivProps extends ElementProps {}
+
+export function Div(props?: DivProps) {
   return Element({
     tag: 'div',
     ...props,
